@@ -9,21 +9,21 @@ import math
 
 def main():
     # this function calculates the area and the perimeter of a rectangle
-    
+
     # input
     length = input("Enter the length of a rectangle (mm):")
-    width = input("Enter the wedth of a rectangle (mm):")
+    width = input("Enter the width of a rectangle (mm):")
 
     # process
-    area = ((length)*(width))
-    perimeter = (2*((length)+(width)))
-    
+    area = ((int(length))*(int(width)))
+    perimeter = (2*((int(length))+(int(width))))
+
     # output
     print("The area of a rectangle is {} mm²."
           .format(area))
-    print("The perimeter of a rectangle is {} mm"
+    print("The perimeter of a rectangle is {} mm."
           .format(perimeter))
 
 
-    if __name__ == "__main__":
-        main()
+if __name__ == "__main__":
+    main()
